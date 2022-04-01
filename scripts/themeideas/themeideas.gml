@@ -24,6 +24,7 @@ function themeideas(){
 	A game where everything is made out of wood
 	water
 -Folklore
+	little red riding hood
 -Shelter
 	something raining down
 +Infestation
@@ -32,15 +33,15 @@ function themeideas(){
 	food is randomly generate throughout the map infinte?
 	need food to create queen/hill
 	universal paperclips
-0Road trip
+-Road trip
 0Tunnels
 0Overgrown
 	strong plants
 	Over, grown
-+Out of order
+0Out of order
 	something to do with doing something backwards
 	a thing that doesn't work
--Space is limited
+0Space is limited
 	Outer space is limited
 		limited oxygen
 		space ship
@@ -48,7 +49,8 @@ function themeideas(){
 		dust
 	inventory
 -Combine
-0Garden
++Garden
 	Garden tools
+	play music
 */
 }
