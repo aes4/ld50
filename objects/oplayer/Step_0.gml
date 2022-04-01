@@ -20,3 +20,4 @@ if (0 > y || y > room_height) {
 }
 y += random(20) - 10
 x += random(20) - 10
+// test
