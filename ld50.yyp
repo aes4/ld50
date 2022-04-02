@@ -1,10 +1,21 @@
 {
   "resources": [
+    {"id":{"name":"Settings","path":"rooms/Settings/Settings.yy",},"order":3,},
+    {"id":{"name":"stage1room1","path":"rooms/stage1room1/stage1room1.yy",},"order":2,},
     {"id":{"name":"sraindrop0","path":"sprites/sraindrop0/sraindrop0.yy",},"order":2,},
+    {"id":{"name":"ssettings","path":"sprites/ssettings/ssettings.yy",},"order":5,},
+    {"id":{"name":"osettings","path":"objects/osettings/osettings.yy",},"order":4,},
     {"id":{"name":"obutton","path":"objects/obutton/obutton.yy",},"order":1,},
+    {"id":{"name":"ogame","path":"objects/ogame/ogame.yy",},"order":3,},
+    {"id":{"name":"senemy1","path":"sprites/senemy1/senemy1.yy",},"order":4,},
+    {"id":{"name":"rt","path":"scripts/rt/rt.yy",},"order":0,},
     {"id":{"name":"sbutton","path":"sprites/sbutton/sbutton.yy",},"order":1,},
+    {"id":{"name":"oquit","path":"objects/oquit/oquit.yy",},"order":5,},
     {"id":{"name":"splayer","path":"sprites/splayer/splayer.yy",},"order":0,},
-    {"id":{"name":"game","path":"rooms/game/game.yy",},"order":1,},
+    {"id":{"name":"squit","path":"sprites/squit/squit.yy",},"order":6,},
+    {"id":{"name":"oenemy1","path":"objects/oenemy1/oenemy1.yy",},"order":2,},
+    {"id":{"name":"stage1room2","path":"rooms/stage1room2/stage1room2.yy",},"order":1,},
+    {"id":{"name":"sfloor","path":"sprites/sfloor/sfloor.yy",},"order":7,},
     {"id":{"name":"sraindrop1","path":"sprites/sraindrop1/sraindrop1.yy",},"order":3,},
     {"id":{"name":"oplayer","path":"objects/oplayer/oplayer.yy",},"order":0,},
     {"id":{"name":"themeideas","path":"scripts/themeideas/themeideas.yy",},"order":0,},
@@ -23,7 +34,9 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},},
-    {"roomId":{"name":"game","path":"rooms/game/game.yy",},},
+    {"roomId":{"name":"stage1room2","path":"rooms/stage1room2/stage1room2.yy",},},
+    {"roomId":{"name":"stage1room1","path":"rooms/stage1room1/stage1room1.yy",},},
+    {"roomId":{"name":"Settings","path":"rooms/Settings/Settings.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

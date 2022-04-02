@@ -1,0 +1,7 @@
+draw_text(80, 60, "health: " + string(oplayer.life))
+draw_text(80, 80, "enemys: " + string(oplayer.amt))
+draw_text(80, 100, "player x: " + string(oplayer.x))
+draw_text(80, 120, "player y: " + string(oplayer.y))
+draw_text(80, 140, "vel: " + string(oplayer.vel))
+draw_text(80, 200, "room x: " + string(oplayer.locx))
+draw_text(80, 220, "room y: " + string(oplayer.locy))
