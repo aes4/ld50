@@ -1,9 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"sraindrop0","path":"sprites/sraindrop0/sraindrop0.yy",},"order":2,},
     {"id":{"name":"obutton","path":"objects/obutton/obutton.yy",},"order":1,},
     {"id":{"name":"sbutton","path":"sprites/sbutton/sbutton.yy",},"order":1,},
     {"id":{"name":"splayer","path":"sprites/splayer/splayer.yy",},"order":0,},
     {"id":{"name":"game","path":"rooms/game/game.yy",},"order":1,},
+    {"id":{"name":"sraindrop1","path":"sprites/sraindrop1/sraindrop1.yy",},"order":3,},
     {"id":{"name":"oplayer","path":"objects/oplayer/oplayer.yy",},"order":0,},
     {"id":{"name":"themeideas","path":"scripts/themeideas/themeideas.yy",},"order":0,},
     {"id":{"name":"Main_Menu","path":"rooms/Main_Menu/Main_Menu.yy",},"order":0,},
