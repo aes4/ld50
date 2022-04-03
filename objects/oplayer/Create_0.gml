@@ -11,4 +11,4 @@ lifecap = 100
 minutes = 8
 locx = 0
 locy = 0
-amt = 0  // amount of enemys
+amt = 0

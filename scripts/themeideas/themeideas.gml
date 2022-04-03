@@ -28,5 +28,9 @@ Delay:
 inevitable: death, aging, failing, taxes, wind, rain
 wind and rain could be good mood setters and are inevitable
 to do make note to quit using escape and have button to escape the game in the main menu
+to do enemy drop something on the floor
+to do player can hold one item
+to do player can use a potion? prefer use automatically
+to do hold more than one potion?
 */
 }

@@ -30,6 +30,14 @@ if (keyboard_check(ord("D"))) {
 	}
 	x += vel
 }
+if (keyboard_check(ord("J"))) {
+	// have to check if there are still enemys there
+	n = instance_nearest(x, y, oenemy1)
+	if (abs(x - n.x) < 100 && abs(y - n.y < 100)) {
+		n.life -= 10
+	}
+	// hit nearest enemy ?within range?instance_nearest
+}
 
 if (64 > x || x > room_width - 64) {
 	x += 100
