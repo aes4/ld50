@@ -10,6 +10,7 @@
     {"id":{"name":"senemy1","path":"sprites/senemy1/senemy1.yy",},"order":4,},
     {"id":{"name":"rt","path":"scripts/rt/rt.yy",},"order":0,},
     {"id":{"name":"sbutton","path":"sprites/sbutton/sbutton.yy",},"order":1,},
+    {"id":{"name":"sheart","path":"sprites/sheart/sheart.yy",},"order":8,},
     {"id":{"name":"oquit","path":"objects/oquit/oquit.yy",},"order":5,},
     {"id":{"name":"splayer","path":"sprites/splayer/splayer.yy",},"order":0,},
     {"id":{"name":"squit","path":"sprites/squit/squit.yy",},"order":6,},
