@@ -1,2 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+heartx = 15
+hearty = 15
+heartspacing = 45

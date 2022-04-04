@@ -8,6 +8,19 @@ if (keyboard_check(ord("W"))) {
 		vel *= velinc
 	}
 	y -= vel
+	if (life > 60) {
+		sprite_index = splayer1forward
+	} else if (life > 30) {
+		sprite_index = splayer2forward
+	} else if (life > 0) {
+		sprite_index = splayer3forward
+	}
+	if (place_meeting(x, y, obox)) {
+		y += vel + 1
+		ready = true
+		ldir = dir
+	}
+	dir = 0
 }
 if (keyboard_check(ord("S"))) {
 	if (vel < velcap) {
@@ -15,6 +28,19 @@ if (keyboard_check(ord("S"))) {
 		vel *= velinc
 	}
 	y += vel
+	if (life > 60) {
+		sprite_index = splayer1backward
+	} else if (life > 30) {
+		sprite_index = splayer2backward
+	} else if (life > 0) {
+		sprite_index = splayer3backward
+	}
+	if (place_meeting(x, y, obox)) {
+		y -= vel + 1
+		ready = true
+		ldir = dir
+	}
+	dir = 2
 }
 if (keyboard_check(ord("A"))) {
 	if (vel < velcap) {
@@ -22,6 +48,19 @@ if (keyboard_check(ord("A"))) {
 		vel *= velinc
 	}
 	x -= vel
+	if (life > 60) {
+		sprite_index = splayer1left
+	} else if (life > 30) {
+		sprite_index = splayer2left
+	} else if (life > 0) {
+		sprite_index = splayer3left
+	}
+	if (place_meeting(x, y, obox)) {
+		x += vel + 1
+		ready = true
+		ldir = dir
+	}
+	dir = 3
 }
 if (keyboard_check(ord("D"))) {
 	if (vel < velcap) {
@@ -29,37 +68,26 @@ if (keyboard_check(ord("D"))) {
 		vel *= velinc
 	}
 	x += vel
-}
-if (keyboard_check(ord("J"))) {
-	// have to check if there are still enemys there
-	n = instance_nearest(x, y, oenemy1)
-	if (abs(x - n.x) < 100 && abs(y - n.y < 100)) {
-		n.life -= 10
+	if (life > 60) {
+		sprite_index = splayer1right
+	} else if (life > 30) {
+		sprite_index = splayer2right
+	} else if (life > 0) {
+		sprite_index = splayer3right
 	}
-	// hit nearest enemy ?within range?instance_nearest
+	if (place_meeting(x, y, obox)) {
+		x -= vel + 1
+		ready = true
+		ldir = dir
+	}
+	dir = 1
 }
 
-if (64 > x || x > room_width - 64) {
-	x += 100
-	room_instance_clear(rt())
-	amt = round(random(10))
-	for (i = 1; i <= amt; i++) {
-		room_instance_add(rt(), random(1000), random(1000), oenemy1)
+if (ldir < 4) {
+	if (!ldir == dir) {
+		ready = false
 	}
-	room_goto(rt())
-	locx += 1
 }
-if (64 > y || y > room_height - 64) {
-	y += 100
-	room_instance_clear(rt())
-	amt = round(random(10))
-	for (i = 1; i <= amt; i++) {
-		room_instance_add(rt(), random(1000), random(1000), oenemy1)
-	}
-	room_goto(rt())
-	locy += 1
-}
-
 
 if (vel > 0) {
 	vel *= velinc/2

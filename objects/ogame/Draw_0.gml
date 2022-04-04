@@ -1,33 +1,11 @@
-if (oplayer.life > 10 && oplayer.life < 20) {
-	draw_sprite(sheart, 1, 20, 20)
-} else if (oplayer.life > 20) {
-	draw_sprite(sheart, 0, 20, 20)
-	if (oplayer.life > 30 && oplayer.life < 40) {
-		draw_sprite(sheart, 1, 40, 20)
-	} else if (oplayer.life > 40) {
-		draw_sprite(sheart, 0, 40, 20)
-		if (oplayer.life > 50 && oplayer.life < 60) {
-			draw_sprite(sheart, 1, 60, 20)
-		} else if (oplayer.life > 60) {
-			draw_sprite(sheart, 0, 60, 20)
-			if (oplayer.life > 70 && oplayer.life < 80) {
-				draw_sprite(sheart, 1, 80, 20)
-			} else if (oplayer.life > 80) {
-				draw_sprite(sheart, 0, 80, 20)
-				if (oplayer.life > 90 && oplayer.life < 20) {
-					draw_sprite(sheart, 1, 100, 20)
-				} else {
-					draw_sprite(sheart, 0, 100, 20)
-				}
-			}
-		}
-	}
+draw_text(debugx, debugy, "player health: " + string(oplayer.life) + "/" + string(oplayer.lifecap))
+draw_text(debugx, debugy + (1 * debugspacing), "enemys: " + string(amt))
+draw_text(debugx, debugy + (2 * debugspacing), "player x: " + string(oplayer.x))
+draw_text(debugx, debugy + (3 * debugspacing), "player y: " + string(oplayer.y))
+draw_text(debugx, debugy + (4 * debugspacing), "player vel: " + string(oplayer.vel))
+draw_text(debugx, debugy + (5 * debugspacing), "room x: " + string(loc.xx))
+draw_text(debugx, debugy + (6 * debugspacing), "room y: " + string(loc.yy))
+draw_text(debugx, debugy + (7 * debugspacing), "ready to dig: " + string(oplayer.ready))
+for (i = 0; i < array_length(rooms.cleared); i++) {
+	draw_text(debugx, debugy + ((9 + i) * debugspacing), "cleared room: " + string(rooms.cleared[i].xx) + ", " + string(rooms.cleared[i].yy))
 }
-
-draw_text(80, 60, "health: " + string(oplayer.life) + "/" + string(oplayer.lifecap))
-draw_text(80, 80, "enemys: " + string(oplayer.amt))
-draw_text(80, 100, "player x: " + string(oplayer.x))
-draw_text(80, 120, "player y: " + string(oplayer.y))
-draw_text(80, 140, "vel: " + string(oplayer.vel))
-draw_text(80, 200, "room x: " + string(oplayer.locx))
-draw_text(80, 220, "room y: " + string(oplayer.locy))
